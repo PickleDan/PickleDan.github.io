@@ -1,12 +1,47 @@
 body{
-    font-family: Roboto, sans-serif;
-    font-size: 13px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
     background: #16A085;
+    margin: 0;
+    padding: 0;
 }
 .square{
     background: #fff;
-    width: 700px;
+    width: 620px;
     margin: 80px auto;
+    border-radius: 4px;
+    box-shadow: 0px 6px 12px 1px rgba(0, 0, 0, 0.4);
+}
+.name-and-account{
+    display: flex;
+}
+h1{
+    font-size: 24px;
+    font-weight: 900;
+    margin: 0;
+}
+.square__text{
+    padding: 50px 78px 0 78px;
+}
+.square-top__account{
+    padding: 8px;
+}
+.round{
+    margin-left: auto;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #dfdfdf;
+}
+.square-top__order{
+    margin: 0;
+    padding-top: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #B8BBC0
+}
+.pricing{
+    padding-top: 40px;
 }
 .pricing__item{
     display: flex;
