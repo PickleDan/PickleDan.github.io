@@ -37,6 +37,7 @@ h1{
     height: 40px;
     border-radius: 50%;
     border: 1px solid #dfdfdf;
+    transition: all 0.35s ease-in-out;
 }
 .round:hover{
     box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.4);
