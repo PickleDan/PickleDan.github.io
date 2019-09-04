@@ -4,6 +4,9 @@ body{
     background-size: 100% 100%;
     background-attachment: fixed;
 }
+p{
+    margin: 0;
+}
 .box{
     width: 400px;
     margin: 120px auto;
@@ -14,7 +17,7 @@ body{
     color: #fff;
     display: flex;
     align-items: center;
-    padding: 10px 5px 10px 18px;
+    padding: 10px 5px 10px 20px;
 }
 .top__dot{
     width: 4px;
@@ -27,15 +30,99 @@ body{
 .top__name{
     text-transform: uppercase;
     font-size: 14px;
-    padding-left: 16px;
-    opacity: 0.8;
+    padding-left: 12px;
+    letter-spacing: 1px;
+    opacity: 0.9;
 }
 img{
     margin-left: auto;
     padding-right: 14px;
     opacity: 0.6;
+    transition: 0.5s;
+}
+img:hover{
+    opacity: 1;
 }
 h3{
-    color: red;
-    font-size: 50px;;
+    padding-top: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #ddd;
+    margin-top: 0;
+    margin-bottom: 18px;
+
+}
+h3:before,
+h3:after {  
+    content: "";
+    margin-bottom: 3px;
+    display: inline-block;
+    width: 38%;
+    height: 0.9px;
+    vertical-align: middle;
+    background: #ddd;
+}
+h3:before{
+    margin-right: 13px;
+}
+h3:after{
+    margin-left: 13px;
+}
+.chat{
+    padding: 18px;
+    margin-bottom: 10px;
+}
+.message{
+    font-size: 13px;
+    margin-bottom: 18px;
+}
+.message__time{
+    margin-bottom: 6px;
+    color: #acacac;
+    font-size: 13px;
+}
+.message__text{
+    display: inline-block;
+    width: auto;
+    max-width: 248px;
+    width: auto;
+    font-weight: 500;
+    font-size: 14px;
+    border-radius: 4px;
+    padding: 10px;
+}
+.right{
+    text-align: right;
+}
+.left{
+    text-align-last: left;
+}
+.message__sender{
+    background: #E6E6F6;
+    border: 3px solid  #E6E6F6;
+}
+.message__recipient{
+    background: #F2F2F2;
+    border: 3px solid #F2F2F2;
+}
+.text-form{
+    width: 80%;
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+.btn{
+    display: block;
+    margin-left: auto;
+    width: 20%;
+    padding: 0 15px 15px 0;
+    border: none;
+    background-color: transparent;
+    color: #6a96d8;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 15px;
+    cursor: pointer;
 }

@@ -18,28 +18,33 @@
         <h2 class="top__name">Mark Zuckerberg</h2>
         <img src="/img/close.svg" alt="" class="top__close">
       </div>
-      <div class="date-line">
+
+
+      <div class="chat">
         <h3>today</h3>
+        <div class="message left">
+          <div class="message__time">10:53</div>
+          <p class="message__text message__sender">Hi, Mark! I made a new design for Messenger App</p>
+        </div>
+        <div class="message right">
+          <div class="message__time">10:57</div>
+          <p class="message__text message__recipient">Yo! Send it to my assistant and we'll review it during the year
+          </p>
+        </div>
+        <div class="message left">
+          <div class="message__time">11:03</div>
+          <p class="message__text message__sender">But Mark</p>
+        </div>
+        <div class="message right">
+          <p class="message__text message__recipient">You were blocked by the user</p>
+        </div>
       </div>
-      <div class="message">
-        <div class="message__time">10:53</div>
-        <p class="message__text">Hi, Mark! I made a new design for Messenger App</p>
-      </div>
-      <div class="message">
-        <div class="message__time"></div>
-        <p class="message__text">Yo! Send it to my assistant and we'll review it during the year</p>
-      </div>
-      <div class="message">
-        <div class="message__time"></div>
-        <p class="message__text">But Mark</p>
-      </div>
-      <div class="message">
-        <div class="message__time"></div>
-        <p class="message__text">You were blocked by the user</p>
-      </div>
+
       <div class="message-form">
-        <div class="message-form__text">Enter your message</div>
-        <div class="message-form__btn">Send</div>
+        <form>
+          <input type="text" class="text-form" name="message-body" placeholder="Enter your message">
+          <input type="submit" class="btn" value="Send">
+        </form>
       </div>
     </div>
   </div>
