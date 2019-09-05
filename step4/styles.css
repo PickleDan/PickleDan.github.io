@@ -82,7 +82,32 @@ h3:after{
 .message{
     font-size: 13px;
     margin-bottom: 10px;
+    position: relative; 
 }
+.danger{
+    text-align: right;
+}
+.left:before{
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 10px solid #E6E6F6;
+    border-left: 10px solid transparent;
+    position: absolute;
+    top: 21px;
+    left: -6px;
+}
+.right:after{
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 10px solid #f2f2f2;
+    border-right: 10px solid transparent;
+    position: absolute;
+    top: 21.5px;
+    right: -6px;
+}
+
 .message__time{
     margin-bottom: 6px;
     color: #acacac;
@@ -112,6 +137,9 @@ h3:after{
     background: #F2F2F2;
     border: 3px solid #F2F2F2;
     text-align: left;
+}
+.danger{
+    text-align: right;
 }
 .message__danger{
     background: #FFC2C1;
