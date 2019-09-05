@@ -11,6 +11,7 @@ p{
     width: 400px;
     margin: 120px auto;
     background: #fff;
+    position: relative;
 }
 .top{
     background: #6A96D8;
@@ -58,7 +59,7 @@ h3:after {
     content: "";
     margin-bottom: 3px;
     display: inline-block;
-    width: 38%;
+    width: 41%;
     height: 0.9px;
     vertical-align: middle;
     background: #ddd;
@@ -71,11 +72,16 @@ h3:after{
 }
 .chat{
     padding: 18px;
-    margin-bottom: 10px;
+}
+.devision-line{
+    height: 1px;
+    width: 100%;
+    background: #ddd;
+    margin-top: 18px;
 }
 .message{
     font-size: 13px;
-    margin-bottom: 18px;
+    margin-bottom: 10px;
 }
 .message__time{
     margin-bottom: 6px;
@@ -105,18 +111,26 @@ h3:after{
 .message__recipient{
     background: #F2F2F2;
     border: 3px solid #F2F2F2;
+    text-align: left;
+}
+.message__danger{
+    background: #FFC2C1;
+    border: 3px solid #FFC2C1;
 }
 .text-form{
     width: 80%;
     border: none;
     font-size: 15px;
     font-weight: 500;
+    padding: 0 0 15px 20px;
+    outline: none;
 }
 .btn{
+    position: absolute;
     display: block;
-    margin-left: auto;
     width: 20%;
-    padding: 0 15px 15px 0;
+    right: 0;
+    bottom: 15px;
     border: none;
     background-color: transparent;
     color: #6a96d8;
@@ -125,4 +139,5 @@ h3:after{
     letter-spacing: 1px;
     font-size: 15px;
     cursor: pointer;
+    outline: none;
 }
