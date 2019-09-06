@@ -3,7 +3,7 @@
     margin: 0;
 }
 body{
-    background: url(/img/background.jpg);
+    background: url(img/background.jpg);
     font-size: 16px;
     font-family: "Roboto", sans-serif;
     background-size: 100% 100%;
@@ -70,5 +70,10 @@ span{
     right: 0;
     bottom: 0;
     width: 150px;
+<<<<<<< HEAD
     padding: 0 40px 40px 0;
 }
+=======
+    padding: 0px 40px 40px 0;
+}
+>>>>>>> de895e3b24ded688ee78d0c150ec7ba53162ac90
