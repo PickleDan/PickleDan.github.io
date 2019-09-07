@@ -51,7 +51,7 @@ h1{
     position: relative;
 }
 .aside{
-    background: url(/img/side.jpg);
+    background: url(img/side.jpg);
     grid-area: aside;
     background-size: 100% 100%;
     background-repeat: no-repeat;
