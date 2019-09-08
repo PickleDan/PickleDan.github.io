@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    background: #F2CE97;
+}
+p{
+    padding: 10px;
+}
+h2{
+    font-size: 28px;;
+}
+.box{
+    display: grid;
+    grid-template-columns: 1fr 1.495fr;
+    width: 1000px;
+    height: 558px;;
+    margin: auto;
+    margin-top: 70px;
+    box-shadow: 0px 10px 19px -7px rgba(0,0,0,0.75);
+}
+.wrapper{
+    position: relative;
+}
+.left-side{
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    background: #484956;
+    color: #fff;
+    padding: 62px 0 20px 42px; 
+}
+.title{
+    letter-spacing: 0.8px;
+}
+.subtitle{
+    padding-top: 2px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.title::after{
+    content: "";
+    position: absolute;
+    width: 65px;
+    height: 4px;
+    background: #E37B62;
+    left: 0;
+    top: 78px;
+}
+.author{
+    display: flex;
+    justify-content: start;
+    align-self: center;
+    padding-top: 55px;
+}
+.author h3{
+    display: inline;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+    padding: 20px 0 0 12px;
+}
+.author__photo{
+    border-radius: 50%;
+    height: 64px;
+}
+.right-side{
+    display: grid;
+    grid-template-rows: 4fr 1fr;
+    background: #fff;
+    padding: 46px 32px 0px 32px; 
+}
+.text p{
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+.text span{
+    font-size: 28px;
+    font-weight: 600;
+}
+.right-side-bottom{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+}
+.right-side-bottom::after{
+    content: "";
+    position: absolute;
+    width: 597px;
+    height: 8px;
+    background: #ccc;
+    background: linear-gradient(to top, #FBFBFB, #fff);
+    top: 0;
+    right: 0;
+    margin-right: -31px;
+}
+.comments{
+    align-self: center;
+    justify-self: end;
+    padding-top: 20px;
+}
+.data{
+    align-self: center;
+    padding: 18px 10px 0 0;
+}
+.dots{
+    padding-left: 25px;
+    padding-right: 6px;
+}
+.number{
+    position: absolute;
+    right: 55px;
+    bottom: 38;
+    font-size: 18px;
+    color: rgb(114, 114, 114);
+}
+.data p{
+    font-size: 18px;
+}
+.comment-img{
+    padding-right: 22px;
+}
+
