@@ -131,8 +131,8 @@ h1{
     .text-form{
         padding-bottom: 20px;
     }
-    .become-a-member{
-        /* grid-template-columns: 1fr fr; */
+    .email-join::after{
+        bottom: 120px;
     }
     .aside{
         background: #89B0AE;
