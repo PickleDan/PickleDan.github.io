@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,116 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css" />
 </head>
-<body>
 
+<body>
+  <div class="frame">
+    <div class="wallets">
+      <div class="wrapper">
+        <h2 class="title">My Wallets</h2>
+        <img src="img/plus.svg" alt="" class="plus">
+      </div>
+
+      <div class="all-cards">
+        <div class="card">
+          <div class="inner">
+            <img src="img/visa.svg" alt="" class="card__logo">
+            <div class="card__number">**** <span>****</span> **** 2562</div>
+            <div class="card__validity">Valid thru: 07/20</div>
+          </div>
+        </div>
+
+        <div class="card current">
+          <div class="inner">
+            <img src="img/mastercard.svg" alt="" class="card__logo">
+            <div class="card__number">**** <span>****</span> **** 2562</div>
+            <div class="card__validity">Valid thru: 03/24</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="inner">
+            <img src="img/maestro.svg" alt="" class="card__logo">
+            <div class="card__number">**** <span>****</span> **** 2562</div>
+            <div class="card__validity">Valid thru: 10/21</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="header">
+        <h2>Current Balance</h2>
+        <div class="balance">$729.<sup>00</sup></div>
+      </div>
+      <div class="transactions">
+        <div class="transaction">
+          <div class="circle">
+            <img class="transaction__minus" src="/img/minus.svg" alt="">
+          </div>
+          <div class="wrapper">
+            <h2 class="transaction__title">Apple iPhone 7, 128 GB</h2>
+            <div class="transaction__details">Electronics #32343424 - 12 July 2019</div>
+          </div>
+          <div class="transaction__price credit">$650.<sup>00</sup></div>
+        </div>
+
+        <div class="transaction">
+          <div class="circle">
+            <img class="transaction__minus" src="/img/plus.svg" alt="">
+          </div>
+          <div class="wrapper">
+            <h2 class="transaction__title">Funds Added</h2>
+            <div class="transaction__details">Payment #5435 - 11 July 2019</div>
+          </div>
+          <div class="transaction__price debit">$900.<sup>00</sup></div>
+        </div>
+
+        <div class="transaction">
+          <div class="circle">
+            <img class="transaction__minus" src="/img/minus.svg" alt="">
+          </div>
+          <div class="wrapper">
+            <h2 class="transaction__title">Energy Bill</h2>
+            <div class="transaction__details">Other #745237423 - 11 July 2019</div>
+          </div>
+          <div class="transaction__price credit">$84.<sup>90</sup></div>
+        </div>
+
+        <div class="transaction">
+          <div class="circle">
+            <img class="transaction__minus" src="/img/minus.svg" alt="">
+          </div>
+          <div class="wrapper">
+            <h2 class="transaction__title">The Eye Cinema Ticket</h2>
+            <div class="transaction__details">Entertainment #32343424 - 10 July 2019</div>
+          </div>
+          <div class="transaction__price credit">$40.<sup>00</sup></div>
+        </div>
+
+        <div class="transaction">
+          <div class="circle">
+            <img class="transaction__minus" src="/img/minus.svg" alt="">
+          </div>
+          <div class="wrapper">
+            <h2 class="transaction__title">McFood Restaurant</h2>
+            <div class="transaction__details">Csfes #32346 - 10 July 2019</div>
+          </div>
+          <div class="transaction__price credit">$10.<sup>50</sup></div>
+        </div>
+
+        <div class="transaction">
+          <div class="circle">
+            <img class="transaction__minus" src="/img/minus.svg" alt="">
+          </div>
+          <div class="wrapper">
+            <h2 class="transaction__title">Gas Station</h2>
+            <div class="transaction__details">Other #21237423 - 11 July 2019</div>
+          </div>
+          <div class="transaction__price credit">$30.<sup>00</sup></div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>
