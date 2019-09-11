@@ -1,0 +1,86 @@
+body{
+    background-image: url(/img/background.jpg);
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto bold" , sans-serif;
+}
+.root{
+    width: 400px;
+    margin: 100px auto;
+}
+.card{
+    background: #fff;
+    border-radius: 4px;
+}
+.card__image{
+    width: 15%;
+    height: auto;
+}
+.card__dots{
+    transform: scale(0.5);
+    text-align: center;
+    letter-spacing: 3px;
+    color: #DEDEDE;
+    padding: 15px 0 20px 0;
+}
+.card__dots i:first-child{
+    color: #AAAAAA;
+}
+.card__text{
+    color: #333333;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-weight: 900px;
+    font-size: 24px;;
+    text-align: center;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #AAAAAA;
+}
+.card__name{
+    padding: 8px 0px 0 24px;
+    letter-spacing: 1px;
+}
+.card__check{
+    margin-left: auto;
+    padding-right: 20px;
+}
+.card__footer{
+    text-align: center;
+    padding: 20px;
+    text-transform: uppercase;
+    background: #598BDD;
+    color: #fff;
+    border-radius: 0 0 4px 4px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+.card__footer:hover{
+    background: #5181EC;
+}
+.card__footer:active{
+    transform: translateY(1px);
+}
+.fa-arrow-right{
+    padding-left: 4px;    
+}
+.card__visa, .card__mastercard, .card__maestro{
+    display: flex;
+    padding: 16px 0 15px 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.card__visa:hover, .card__mastercard:hover, .card__maestro:hover{
+    background: #EFEFEF;
+}
+.card__visa{
+    border-bottom: 1px solid #AAAAAA;
+    color: #ACADAD;
+}
+.card__mastercard{
+    border-bottom: 1px solid #AAAAAA;
+    color: #050302;
+}
+.card__maestro{
+    color: #ACADAD;
+}
