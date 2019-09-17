@@ -1,0 +1,33 @@
+body{
+    background: #73BAFF;
+}
+.frame{
+    width: 500px;
+    background: #fff;
+    height: 70px;
+    border-radius: 4px;
+    margin: 50px;
+    position: relative;
+}
+.sort__item{
+    font-size: 16px;
+    border-right: 2px solid #5796FF;
+    padding: 15px;
+    cursor: pointer;
+}
+.sort{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    border: 2px solid #5796FF;
+    border-radius: 5px;
+    display: flex;
+}
+.sort__item:last-child{
+    border: none;
+}
+.selected{
+    color: #fff;
+    background: #5796FF;
+}
