@@ -31,3 +31,7 @@ body{
     color: #fff;
     background: #5796FF;
 }
+.active {
+    color: #fff;
+    background: rgb(69, 126, 255);
+}
