@@ -1,11 +1,11 @@
 function spongeMeme(sentence) {
-    const set = [...new Set(sentence)];
-    console.log(set);
+    const set = sentence.split('');
+    // console.log(set);
     for (let i = 0; i < set.length; i++) {
-        if (i % 2 !== 0) {
-            set[i].toUpperCase();
+        if (i % 2 == 0) {
+            set[i] = set[i].toUpperCase();
         } else {
-            set[i].toLowerCase();
+            set[i] = set[i].toLowerCase();
         }
     }
     console.log(set);
