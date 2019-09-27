@@ -1,6 +1,6 @@
 function validParentheses(parens) {
-    const open = ['('];
-    const close = [')'];
+    const open = ['(', '{', '['];
+    const close = [')', '}', ']'];
     const stack = [];
     for (let i = 0; i < parens.length; i++) {
         if (open.includes(parens[i])) {
@@ -11,7 +11,7 @@ function validParentheses(parens) {
             } else return false;
         }
     }
+    console.log(stack);
     return stack.length == 0;
 }
-
-console.log(validParentheses("(()"));
+console.log(validParentheses("{{{(())}}"));
