@@ -1,0 +1,59 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    --imperial-red: #EA625C;
+    --headers-color: #333333;
+}
+body{
+    font-family: "Roboto", sans-serif;
+}
+header{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40px;
+    max-width: 70%;
+    margin: 40px auto;
+}
+.nav{
+    display: flex;
+    margin-right: 60px;
+}
+.nav__item{
+    padding: 20px;
+    list-style: none;
+    font-size: 16px;
+}
+.nav__item a {
+    text-decoration: none;
+    color: gray;
+}
+.nav__help{
+    outline: none;
+    margin-left: 24px;
+    color: #827977;
+    border: 0px;
+    border-bottom: 1px solid #827977;
+    max-width: 136px;
+}
+.logo{
+    position: absolute;
+    left: 60px;
+    transform: scale(1.5);
+}
+/* bottom block to be repeated */
+.about{
+    max-width: 400px;
+    margin: 30px auto;
+}
+.block{
+    
+}
+.block p{
+    max-width: 390px;
+    font-size: 13px;
+    line-height: 1.5;
+}
