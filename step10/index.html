@@ -8,6 +8,8 @@
   <title>Loop 1 - Challenge</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
   <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
@@ -24,15 +26,19 @@
     and use @import to get them combined in the main.css file.
   -->
   <header>
-    <img src="img/logo.svg" alt="apple-logo" class="logo">
-    <nav>
-      <ul class="nav">
-        <li class="nav__item"><a href="#">About</a></li>
-        <li class="nav__item"><a href="#">Offers</a></li>
-        <li class="nav__item"><a href="#">Services</a></li>
-        <input class="nav__help" type="text" placeholder="How can we help you?">
-      </ul>
-    </nav>
+    <div class="container">
+      <div class="row">
+        <img class="logo col-md-4" src="img/logo.svg" alt="apple-logo">
+        <nav class="col-md-8">
+          <ul class="nav">
+            <li class="nav__item"><a href="#">About</a></li>
+            <li class="nav__item"><a href="#">Offers</a></li>
+            <li class="nav__item"><a href="#">Services</a></li>
+            <input class="nav__help" type="text" placeholder="How can we help you?">
+          </ul>
+        </nav>
+      </div>
+    </div>
   </header>
 
   <section class="about">
