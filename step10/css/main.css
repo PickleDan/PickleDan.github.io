@@ -1,7 +1,7 @@
 *, *::after, *::before{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 html{
     --imperial-red: #EA625C;
@@ -9,18 +9,25 @@ html{
 }
 body{
     font-family: "Roboto", sans-serif;
+    position: relative;
+    overflow-x: hidden;
+}
+.top{
+    height: 94.5vh;
+    border-bottom: 1px solid #111;
 }
 header{
-    position: relative;
     display: flex;
     justify-content: flex-end;
     margin-top: 40px;
-    max-width: 70%;
-    margin: 40px auto;
+}
+header .row{
+    height: 50px;
 }
 .nav{
     display: flex;
-    margin-right: 60px;
+    justify-content: flex-end;
+    padding-right: 30px;
 }
 .nav__item{
     padding: 20px;
@@ -28,32 +35,153 @@ header{
     font-size: 16px;
 }
 .nav__item a {
-    text-decoration: none;
     color: gray;
+    transition: 0.15s;
+    font-weight: 500;
+    position: relative;
+}
+.nav__item a::after{
+    content: '';
+    text-decoration: none;
+    position: absolute;
+    width: 60px;
+    height: 2px;
+    background: var(--imperial-red);
+    bottom: -21px;
+    left: 0;
+    width: 0%;
+}
+.nav__item a:hover:after{
+    color: var(--headers-color);
+    text-decoration: none;
+    width: 100%;
+    left: 0;
+    transition: 0.2s;
+}
+.nav__item a:hover{
+    text-decoration: none;
+    color: #111;
 }
 .nav__help{
     outline: none;
+    text-align: center;
     margin-left: 24px;
     color: #827977;
     border: 0px;
     border-bottom: 1px solid #827977;
-    max-width: 136px;
 }
 .logo{
-    position: absolute;
-    left: 60px;
     transform: scale(1.5);
+    margin-top: 10px;
 }
+.logo img{
+    padding-left: 24px;
+}
+
 /* bottom block to be repeated */
 .about{
-    max-width: 400px;
-    margin: 30px auto;
+    padding-top: 100px;
 }
-.block{
-    
+.block h1{
+    padding-bottom: 40px;
 }
 .block p{
-    max-width: 390px;
     font-size: 13px;
     line-height: 1.5;
+    max-width: 390px;
+    padding-left: 30px;
+}
+.line{
+    position: absolute;
+    top: 98px;
+    left: 18px;
+    height: 96px;
+    width: 3px;
+    background: gray;
+}
+.red-button{
+    margin-top: 20px;
+    background: var(--imperial-red);
+    border: none;
+    color: #fff;
+    outline: none;
+}
+.red-button .button__text{
+    padding: 10px 15px; 
+    margin: auto;
+    font-weight: 600;
+}
+.bg-watch{
+    background-image: url(../img/watches.jpg);
+    background-repeat: no-repeat;
+    background-position-x: 76vw;
+    background-position-y: 16vh;
+    background-size: 40%;
+}
+
+
+
+
+
+
+
+/* lg-размер (<=1199px) */
+@media (max-width: 1199px) {
+    .bg-watch{
+        background-position-y: 25vh;
+    }
+}
+
+/* md-размер (<=991px) */
+@media (max-width: 991px) {
+    .bg-watch{
+        background-position-y: 27vh;
+        background-position-x: 70vw;
+        background-size: 50%;
+    }
+}
+
+/* sm-размер (<=768px) */
+@media (max-width: 767px) { 
+    .bg-watch{
+        background-position-y: 45vh;
+        background-position-x: 60vw;
+        background-size: 50%;
+    }
+    .block__title{
+        font-size: 20px;;
+    }
+    .block__text{
+        font-size: 13px;
+        line-height: normal;
+    }
+    .about{
+        padding-top: 18px;
+    }
+    .line{
+        height: 150px;
+        top: 75px;
+    }
+}
+
+/* xs-размер (<=575px) */
+@media (max-width: 575px) {
+    .bg-watch{
+        background-image: none;
+        font-size: 16px;
+    }
+    .line{
+        height: 114px;
+        top: 136px;
+    }
+    .nav__item{
+        padding: 10px;
+    }
+    .block{
+        padding-top: 20px;
+    }
+    .block h1{
+        text-align: center;
+        padding-top: 40px;
+    }
 }
