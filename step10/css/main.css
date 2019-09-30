@@ -296,7 +296,7 @@ footer::after{
 /* xs-размер (<=575px) */
 @media (max-width: 575px) {
     .bg-watch{
-        background-position-y: 60vh;
+        background-position-y: 66vh;
         background-position-x: 50vw;
         background-size: 70%;
     }
