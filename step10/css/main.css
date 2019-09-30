@@ -14,6 +14,7 @@ body{
 }
 /* the top section */
 .top{
+    min-height: 100%;
     height: 94.5vh;
     border-bottom: 1px solid lightgray;
 }
@@ -83,7 +84,7 @@ header .row{
 .about{
     padding-top: 100px;
 }
-.block h1{
+.block__title{
     padding-bottom: 40px;
 }
 .block__text{
@@ -231,6 +232,11 @@ footer::after{
     .bg-watch{
         background-position-y: 40vh;
     }
+    .img-preview img{ 
+        left: 40px;
+        top: 140px;
+    }  
+}
 }
 
 /* md-размер (<=991px) */
@@ -240,17 +246,25 @@ footer::after{
         background-position-x: 60vw;
         background-size: 50%;
     }
+    .about{
+        padding-top: 40px;
+    }
+    .block-main{
+        margin-bottom: 50px;
+        padding-top: 80px;
+    }
 }
 
 /* sm-размер (<=768px) */
 @media (max-width: 767px) { 
     .bg-watch{
-        background-position-y: 55vh;
+        background-position-y: 57vh;
         background-position-x: 60vw;
         background-size: 50%;
     }
     .block__title{
-        font-size: 20px;;
+        font-size: 20px;
+        padding-bottom: 10px;
     }
     .block__text{
         font-size: 14px;
@@ -262,6 +276,20 @@ footer::after{
     .line{
         height: 150px;
         top: 75px;
+    }
+    .article__title{
+        padding-bottom: 0px;
+    }
+    .article__text{
+        max-width: 100%;
+    }
+    .img-preview img{
+        top: 96px;
+        left: 60px;
+    }
+    .block-main{
+        margin-bottom: 50px;
+        padding-top: 80px;
     }
 }
 
@@ -285,8 +313,11 @@ footer::after{
     .block{
         padding-top: 20px;
     }
-    .block h1{
+    .block__title{
         text-align: center;
         padding-top: 40px;
+    }
+    .block-footer{
+        padding-top: 112px;
     }
 }
