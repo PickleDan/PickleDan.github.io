@@ -12,9 +12,10 @@ body{
     position: relative;
     overflow-x: hidden;
 }
+/* the top section */
 .top{
     height: 94.5vh;
-    border-bottom: 1px solid #111;
+    border-bottom: 1px solid lightgray;
 }
 header{
     display: flex;
@@ -85,17 +86,19 @@ header .row{
 .block h1{
     padding-bottom: 40px;
 }
-.block p{
-    font-size: 13px;
+.block__text{
+    position: relative;
+    font-size: 16px;
     line-height: 1.5;
-    max-width: 390px;
+    max-width: 480px;
     padding-left: 30px;
 }
 .line{
     position: absolute;
-    top: 98px;
-    left: 18px;
-    height: 96px;
+    /* top: 98px; */
+    /* left: 18px; */
+    bottom: 13%;
+    height: 145px;
     width: 3px;
     background: gray;
 }
@@ -109,34 +112,111 @@ header .row{
 .red-button .button__text{
     padding: 10px 15px; 
     margin: auto;
-    font-weight: 600;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 14px;
 }
 .bg-watch{
     background-image: url(../img/watches.jpg);
     background-repeat: no-repeat;
-    background-position-x: 76vw;
-    background-position-y: 16vh;
+    background-position-x: 70vw;
+    background-position-y: 30vh;
     background-size: 40%;
+}
+
+/* The main section */
+
+.articles{
+    margin-top: 50px;
+}
+.article__title{
+    font-size: 18px;
+    font-weight: 700;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+}
+.article__text{
+    font-size: 16px;
+}
+.dots{
+    display: flex;
+    list-style: none;
+}
+.dots li{
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background: gray;
+    margin: 6px;
+}
+.red-link a{
+    font-size: 14px;
+    color: var(--imperial-red);
+    font-weight: 700;
+    position: relative;
+    text-transform: uppercase;
+    margin-left: 45px;
+    transition: padding 0.4s ease;
+}
+.red-link a::before{
+    content: '';
+    height: 2px;
+    background: var(--imperial-red);
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(50%);
+    left: -50px;
+    width: 35%;
+    transition: 0.2s;
+}
+.red-link a:hover::before{
+    width: 50%;
+}
+.red-link a:hover{
+    color: var(--imperial-red);
+    padding-left: 15px;
+    text-decoration: none;
+}
+.img-preview{
+    margin-left: auto;
+
+}
+.img-preview img{
+    /* height: 70vh; */
+    width: 27vw;
+    position: absolute;
+    right: 45px;
+    top: 60px;
+}
+.block-main{
+    padding-top: 170px;
 }
 
 
 
 
+@media (max-width: 1990px) {
+    .bg-watch{
+        background-position-y: 16vh;
+    }
 
-
+@media (max-width: 1456px) {
+    .bg-watch{
+        background-position-y: 30vh;
+    }
 
 /* lg-размер (<=1199px) */
 @media (max-width: 1199px) {
     .bg-watch{
-        background-position-y: 25vh;
+        background-position-y: 40vh;
     }
 }
 
 /* md-размер (<=991px) */
 @media (max-width: 991px) {
     .bg-watch{
-        background-position-y: 27vh;
-        background-position-x: 70vw;
+        background-position-y: 44vh;
+        background-position-x: 60vw;
         background-size: 50%;
     }
 }
@@ -144,7 +224,7 @@ header .row{
 /* sm-размер (<=768px) */
 @media (max-width: 767px) { 
     .bg-watch{
-        background-position-y: 45vh;
+        background-position-y: 55vh;
         background-position-x: 60vw;
         background-size: 50%;
     }
@@ -152,7 +232,7 @@ header .row{
         font-size: 20px;;
     }
     .block__text{
-        font-size: 13px;
+        font-size: 14px;
         line-height: normal;
     }
     .about{
@@ -167,8 +247,12 @@ header .row{
 /* xs-размер (<=575px) */
 @media (max-width: 575px) {
     .bg-watch{
-        background-image: none;
-        font-size: 16px;
+        background-position-y: 60vh;
+        background-position-x: 50vw;
+        background-size: 70%;
+    }
+    .nav__help{
+        margin-top: 10px;
     }
     .line{
         height: 114px;
