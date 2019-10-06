@@ -1,0 +1,171 @@
+body{
+    font-family: Roboto, sans-serif;
+    background: linear-gradient(to top, #92B1CB, #CFDDE8 );
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+p{
+    margin: 0;
+}
+.box{
+    width: 400px;
+    margin: 120px auto;
+    background: #fff;
+    position: relative;
+}
+.top{
+    background: #6A96D8;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 10px 5px 10px 20px;
+}
+.top__dot{
+    width: 4px;
+    height: 4px;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    background: #fff;
+    opacity: 0.8;
+}
+.top__name{
+    text-transform: uppercase;
+    font-size: 14px;
+    padding-left: 12px;
+    letter-spacing: 1px;
+    opacity: 0.9;
+}
+img{
+    margin-left: auto;
+    padding-right: 14px;
+    opacity: 0.6;
+    transition: 0.5s;
+}
+img:hover{
+    opacity: 1;
+}
+h3{
+    padding-top: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #ddd;
+    margin-top: 0;
+    margin-bottom: 18px;
+
+}
+h3:before,
+h3:after {  
+    content: "";
+    margin-bottom: 3px;
+    display: inline-block;
+    width: 41%;
+    height: 0.9px;
+    vertical-align: middle;
+    background: #ddd;
+}
+h3:before{
+    margin-right: 13px;
+}
+h3:after{
+    margin-left: 13px;
+}
+.chat{
+    padding: 18px;
+}
+.devision-line{
+    height: 1px;
+    width: 100%;
+    background: #ddd;
+    margin-top: 18px;
+}
+.message{
+    font-size: 13px;
+    margin-bottom: 10px;
+    position: relative; 
+}
+.danger{
+    text-align: right;
+}
+.left:before{
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 10px solid #E6E6F6;
+    border-left: 10px solid transparent;
+    position: absolute;
+    top: 21px;
+    left: -6px;
+}
+.right:after{
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 10px solid #f2f2f2;
+    border-right: 10px solid transparent;
+    position: absolute;
+    top: 21.5px;
+    right: -6px;
+}
+
+.message__time{
+    margin-bottom: 6px;
+    color: #acacac;
+    font-size: 13px;
+}
+.message__text{
+    display: inline-block;
+    width: auto;
+    max-width: 248px;
+    width: auto;
+    font-weight: 500;
+    font-size: 14px;
+    border-radius: 4px;
+    padding: 10px;
+}
+.right{
+    text-align: right;
+}
+.left{
+    text-align-last: left;
+}
+.message__sender{
+    background: #E6E6F6;
+    border: 3px solid  #E6E6F6;
+}
+.message__recipient{
+    background: #F2F2F2;
+    border: 3px solid #F2F2F2;
+    text-align: left;
+}
+.danger{
+    text-align: right;
+}
+.message__danger{
+    background: #FFC2C1;
+    border: 3px solid #FFC2C1;
+}
+.text-form{
+    width: 80%;
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 0 0 15px 20px;
+    outline: none;
+}
+.btn{
+    position: absolute;
+    display: block;
+    width: 20%;
+    right: 0;
+    bottom: 15px;
+    border: none;
+    background-color: transparent;
+    color: #6a96d8;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+}
