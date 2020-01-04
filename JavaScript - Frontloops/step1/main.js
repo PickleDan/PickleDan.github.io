@@ -1,20 +1,34 @@
-const items = document.getElementsByClassName('sort__item');
-
-console.log(items);
-
-for (let item of items) {
-    item.addEventListener('click', fireActive);
-    item.addEventListener('mouseenter', toggleBackground);
-    item.addEventListener('mouseleave', toggleBackground);
+function addClickEventListeners(items) {
+  for (let item of items) {
+    item.addEventListener("click", fireActive);
+  }
 }
 
-function fireActive(el) {
-    for (let item of items) {
-        item.classList.remove('active');
-    }
-    el.target.classList.add('active');
+function fireActive(event) {
+  disableLastActiveElement(items, options);
+
+  const item = event.target;
+  item.classList.add("sort__item--active");
+  let attr = item.getAttribute("data-value");
+  let option = document.querySelector(`option[value = "${attr}"]`);
+  option.setAttribute("selected", "selected");
 }
 
-function toggleBackground(el) {
-    el.target.clallList.toggle('selected');
+function disableLastActiveElement(items, options) {
+  for (let item of items) {
+    item.classList.remove("sort__item--active");
+  }
+  for (let option of options) {
+    option.removeAttribute("selected");
+  }
 }
+
+function optionClickHandler(event) {}
+
+const options = document.querySelectorAll(".js-select-item");
+console.log(options);
+const items = document.querySelectorAll(".js-sort-item");
+
+// console.log(items);
+
+addClickEventListeners(items);

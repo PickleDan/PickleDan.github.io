@@ -4,7 +4,7 @@
 <head>
     <link rel="stylesheet" href="styles.css">
     <title>Segmented control</title>
-    <script src="main.js"></script>
+    <meta name="viewport" content="initial-scale=1">
 </head>
 
 <body>
@@ -14,11 +14,17 @@
     -->
     <div class="frame">
         <div class="sort">
-            <div class="sort__item">Sort by price</div>
-            <div class="sort__item">Sort by name</div>
-            <div class="sort__item">Sort by relevance</div>
+            <div data-value="price" class="sort__item sort__item--active js-sort-item">Sort by price</div>
+            <div data-value="name" class="sort__item js-sort-item">Sort by name</div>
+            <div data-value="relevance" class="sort__item js-sort-item">Sort by relevance</div>
         </div>
+        <select name="" id="">
+            <option value="price" class="js-select-item">Sort by price</option>
+            <option value="name" class="js-select-item">Sort by name</option>
+            <option value="relevance" class="js-select-item">Sort by relevance</option>
+        </select>
     </div>
 </body>
+<script src="main.js"></script>
 
 </html>
