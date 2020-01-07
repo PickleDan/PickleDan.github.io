@@ -240,7 +240,9 @@ main {
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); }
+  .bio-image {
+    margin: 1.5rem !important; } }
 
 @media screen and (max-width: 768px) {
   main {
