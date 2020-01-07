@@ -75,8 +75,8 @@ main {
   grid-gap: 30px;
   grid-template-areas:
     "bioimage bio bio"
-    "job1 job2 job3";
-  grid-template-columns: repeat(3, 1fr);
+    "job1 skills skills";
+  grid-template-columns: repeat (1fr 1fr 1fr);
   .bio-image {
     width: 80%;
 
@@ -87,21 +87,23 @@ main {
   }
   .bio {
     grid-area: bio;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
   .job-1 {
     grid-area: job1;
   }
-  .job-2 {
-    grid-area: job2;
+  .skills {
+    grid-area: skills;
   }
-  .job-3 {
-    grid-area: job3;
-  }
+
   .job {
     background: lighten($primary-color, 5);
     padding: 0.5rem;
     border-bottom: $secondary-color 5px solid;
+  }
+
+  .skills {
+    font-size: 1.4rem;
   }
 }
 
