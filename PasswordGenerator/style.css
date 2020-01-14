@@ -60,11 +60,11 @@ body {
   width: 40px;
 }
 .btn-large {
-  width: 200px;
   display: flex;
   justify-content: center;
   width: 100%;
-  padding-top: 16px;
+  margin-top: 20px;
+  margin-bottom: 8px;
 }
 
 @media screen and (max-width: 400px) {

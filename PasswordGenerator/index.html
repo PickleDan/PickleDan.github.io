@@ -15,36 +15,44 @@
     <div class="container">
       <h2>Генератор паролей</h2>
       <div class="result-field">
-        <p>zsfsadfsdfzsdf</p>
-        <button class="btn">
+        <p id="result"></p>
+        <button class="btn" id="clipboard">
           <i class="far fa-clipboard"></i>
         </button>
       </div>
       <div class="settings">
         <div class="setting">
           <label>Длина пароля</label>
-          <input class="password-length" type="number" />
+          <input
+            id="length"
+            class="password-length"
+            type="number"
+            min="4"
+            max="20"
+            value="10"
+          />
         </div>
         <div class="setting">
-          <label>Включить заглавные символы</label>
-          <input type="checkbox" />
+          <label for="uppercase">Включить заглавные символы</label>
+          <input type="checkbox" id="uppercase" checked />
         </div>
         <div class="setting">
-          <label>Включить прописные символы</label>
-          <input type="checkbox" />
+          <label for="lowercase">Включить прописные символы</label>
+          <input type="checkbox" id="lowercase" checked />
         </div>
         <div class="setting">
-          <label>Включить цифры</label>
-          <input type="checkbox" />
+          <label for="numbers">Включить цифры</label for="numbers">
+          <input type="checkbox" id="numbers" checked/>
         </div>
         <div class="setting">
-          <label>Включить различные символы</label>
-          <input type="checkbox" />
+          <label for="symbols">Включить различные символы</label>
+          <input type="checkbox" id="symbols" checked/>
         </div>
       </div>
-      <div class="btn-large">
-        <button class="btn ">Сгенерировать пароль</button>
-      </div>
+
+      <button class="btn btn-large" id="generate">Сгенерировать пароль</button>
     </div>
+    
+    <script src="./main.js"></script>
   </body>
 </html>
