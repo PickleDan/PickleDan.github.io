@@ -133,6 +133,10 @@ h3 {
     padding: 0.2rem 1rem;
     background: rgba(56, 56, 56, 0.5); }
 
+p {
+  margin: 0;
+  padding: 0; }
+
 a {
   color: #fff;
   text-decoration: none; }
@@ -172,6 +176,11 @@ main {
   .about-info .bio {
     grid-area: bio;
     font-size: 1.4rem; }
+  .about-info .about-title {
+    margin: 20px 0px; }
+  .about-info .text-about {
+    text-indent: 40px;
+    text-align: justify; }
   .about-info .job-1 {
     grid-area: job1; }
   .about-info .skills {

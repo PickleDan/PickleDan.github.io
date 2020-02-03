@@ -33,6 +33,11 @@ h3 {
   }
 }
 
+p {
+  margin: 0;
+  padding: 0;
+}
+
 a {
   color: #fff;
   text-decoration: none;
@@ -79,7 +84,6 @@ main {
   grid-template-columns: repeat (1fr 1fr 1fr);
   .bio-image {
     width: 80%;
-
     grid-area: bioimage;
     margin: auto;
     border-radius: 5%;
@@ -88,6 +92,13 @@ main {
   .bio {
     grid-area: bio;
     font-size: 1.4rem;
+  }
+  .about-title {
+    margin: 20px 0px;
+  }
+  .text-about {
+    text-indent: 40px;
+    text-align: justify;
   }
   .job-1 {
     grid-area: job1;
