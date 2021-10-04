@@ -247,6 +247,9 @@ main#home {
   font-size: 1.4rem;
   margin-bottom: 20px;
 }
+.jobs .about-project {
+  margin-top: 14px;
+}
 .about-info .jobs .cards {
   display: flex;
   flex-wrap: wrap;
