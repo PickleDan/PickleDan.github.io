@@ -9,7 +9,7 @@
   "author": "Danil Larin",
   "license": "ISC",
   "dependencies": {
-    "node-sass": "^4.13.0"
+    "node-sass": "^7.0.0"
   },
   "devDependencies": {
     "prettier": "2.4.1"
